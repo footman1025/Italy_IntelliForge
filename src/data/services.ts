@@ -200,9 +200,8 @@ export const services: Service[] = [
     number: "04",
     name: "Automation",
     rate: 50,
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "A dashboard of charts used to watch an automated workflow",
+    image: "/automation.png",
+    imageAlt: "A robot moving task cards through an automated workflow",
     summary: "Workflows, CRMs, and AI that save real hours.",
     headline: "Stop doing work a system should do.",
     lede: "Most automation projects disappoint for one reason: someone automated a broken process instead of fixing it first. Speeding up the wrong workflow produces mistakes faster — and then they are invisible.",
