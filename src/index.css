@@ -229,11 +229,9 @@ img {
 }
 
 .mark {
-  width: 0.85rem;
-  height: 0.85rem;
-  border-radius: 2px;
-  background: linear-gradient(145deg, #d27a52, #8a3d22 72%);
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.16);
+  width: 1.75rem;
+  height: 1.75rem;
+  display: block;
   flex: none;
 }
 

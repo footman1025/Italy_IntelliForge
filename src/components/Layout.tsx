@@ -28,7 +28,15 @@ export function Layout() {
       <header className="site-header">
         <div className="container header-inner">
           <Link to="/" className="logo" aria-label="IntelliForge, home">
-            <span className="mark" aria-hidden="true" />
+            <svg className="mark" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="9" fill="#1c1712" />
+              <path
+                fill="#f4efe6"
+                fillRule="evenodd"
+                d="M16 6.8 23.4 16 16 25.2 8.6 16 16 6.8Zm0 4.35L12.35 16 16 20.85 19.65 16 16 11.15Z"
+              />
+              <path fill="#d27a52" d="M16 13.35 17.9 16 16 18.65 14.1 16Z" />
+            </svg>
             IntelliForge
           </Link>
           <button
