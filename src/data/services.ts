@@ -349,9 +349,8 @@ export const services: Service[] = [
     number: "06",
     name: "3D & spatial",
     rate: 50,
-    image:
-      "https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Abstract 3D forms in soft light",
+    image: "/3d.png",
+    imageAlt: "A villa shown half as a wireframe model and half as a finished building",
     summary: "CAD, architecture, and real-time engines.",
     headline: "Right for the way it will be used.",
     lede: "Most 3D projects don't fail because of bad modeling. They fail because the model was built before anyone asked what it was for. A stunning render of a part that can't be manufactured, a building that ignores the site, or a game asset that tanks the frame rate is still a redo.",
