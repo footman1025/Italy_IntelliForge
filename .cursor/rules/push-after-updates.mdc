@@ -1,0 +1,15 @@
+---
+description: Push project updates to GitHub after they are made
+alwaysApply: true
+---
+
+# Push after updates
+
+After you change this project, commit the update and push it to `origin` (`https://github.com/footman1025/Italy_IntelliForge.git`) before you finish.
+
+- Author each commit as `footman1025` / `luckyman428623@gmail.com` with `git -c` on the commit command only.
+- Do not change git config.
+- Do not skip hooks, force-push, or amend a commit that was not just created by you in this conversation and is still unpushed.
+- Leave out secrets (`.env`, credentials).
+- If there is nothing new to commit, do not make an empty commit.
+---

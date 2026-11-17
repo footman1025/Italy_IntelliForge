@@ -27,9 +27,8 @@ export const services: Service[] = [
     number: "01",
     name: "Software",
     rate: 50,
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "A laptop on a desk with software code on the screen",
+    image: "/software.png",
+    imageAlt: "A laptop dashboard connected to a workflow and a cloud database",
     summary: "Apps, APIs, AI, and the systems around them.",
     headline: "Built right the first time.",
     lede: "Most software projects don't fail because of bad code. They fail because the wrong problems get solved first. A beautiful codebase built on a misunderstood workflow is still a rewrite waiting to happen.",
