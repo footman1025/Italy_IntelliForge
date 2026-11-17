@@ -75,9 +75,8 @@ export const services: Service[] = [
     number: "02",
     name: "Trading systems",
     rate: 60,
-    image:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Market charts on a trading screen",
+    image: "/trading.png",
+    imageAlt: "A trading desk with live charts and an execution pipeline",
     summary: "Bots, brokers, and execution that holds up live.",
     headline: "Automate the strategy the right way.",
     lede: "Most trading bots don't fail on strategy. They fail on execution. A partial fill handled wrong, a dropped WebSocket, an API rate limit at the worst moment. The logic was fine. The engineering wasn't.",
