@@ -7,7 +7,7 @@ import { usePage } from "../usePage";
 export function Services() {
   usePage(
     "Services · IntelliForge",
-    "Six IntelliForge practices: software, trading systems, brand and video, automation, stores and CMS, and 3D. Hourly rates in USD.",
+    "Six IntelliForge services: software, trading systems, brand and video, automation, stores and CMS, and 3D.",
   );
 
   return (

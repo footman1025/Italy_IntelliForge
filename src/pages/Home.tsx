@@ -55,7 +55,7 @@ export function Home() {
             ["10+ years", "With growing companies"],
             ["6 practices", "Kept inside one studio"],
             [studio.location, "Founder-led from the start"],
-            ["Hourly", "Scope agreed before work"],
+            ["Services", "From software to 3D"],
           ].map(([title, caption]) => (
             <li key={title}>
               <strong>{title}</strong>

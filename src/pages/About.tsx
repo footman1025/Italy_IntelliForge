@@ -83,10 +83,6 @@ export function About() {
                 <dt>Recommendations</dt>
                 <dd>{studio.recommendations} from clients</dd>
               </div>
-              <div>
-                <dt>Pricing</dt>
-                <dd>Hourly, in USD, scoped before work starts</dd>
-              </div>
             </dl>
           <div className="prose about-copy">
             <p>

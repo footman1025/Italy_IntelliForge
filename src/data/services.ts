@@ -7,7 +7,6 @@ export type Service = {
   slug: string;
   number: string;
   name: string;
-  rate: number;
   summary: string;
   headline: string;
   lede: string;
@@ -26,7 +25,6 @@ export const services: Service[] = [
     slug: "software",
     number: "01",
     name: "Software",
-    rate: 50,
     image: "/software.png",
     imageAlt: "A laptop dashboard connected to a workflow and a cloud database",
     summary: "Apps, APIs, AI, and the systems around them.",
@@ -74,7 +72,6 @@ export const services: Service[] = [
     slug: "trading",
     number: "02",
     name: "Trading systems",
-    rate: 60,
     image: "/trading.png",
     imageAlt: "A trading desk with live charts and an execution pipeline",
     summary: "Bots, brokers, and execution that holds up live.",
@@ -128,7 +125,6 @@ export const services: Service[] = [
     slug: "design",
     number: "03",
     name: "Brand & motion",
-    rate: 30,
     image: "/design.png",
     imageAlt: "A designer at a desk with a brand identity on the monitor",
     summary: "Identity, product design, print, and video.",
@@ -199,7 +195,6 @@ export const services: Service[] = [
     slug: "automation",
     number: "04",
     name: "Automation",
-    rate: 50,
     image: "/automation.png",
     imageAlt: "A robot moving task cards through an automated workflow",
     summary: "Workflows, CRMs, and AI that save real hours.",
@@ -278,7 +273,6 @@ export const services: Service[] = [
     slug: "cms",
     number: "05",
     name: "Stores & CMS",
-    rate: 40,
     image: "/cms.png",
     imageAlt: "A shopper browsing a store catalog on a tablet",
     summary: "WordPress, Shopify, Webflow, and stores that sell.",
@@ -348,7 +342,6 @@ export const services: Service[] = [
     slug: "3d",
     number: "06",
     name: "3D & spatial",
-    rate: 50,
     image: "/3d.png",
     imageAlt: "A villa shown half as a wireframe model and half as a finished building",
     summary: "CAD, architecture, and real-time engines.",
@@ -400,10 +393,6 @@ export const services: Service[] = [
     related: ["design", "software"],
   },
 ];
-
-export function hourly(rate: number) {
-  return `$${rate} USD / hour`;
-}
 
 export function getService(slug: string | undefined) {
   return services.find((service) => service.slug === slug);

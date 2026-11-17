@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { Breadcrumb } from "../components/Breadcrumb";
 import { CtaBand } from "../components/CtaBand";
-import { getService, hourly, services } from "../data/services";
+import { getService, services } from "../data/services";
 import { studio } from "../studio";
 import { usePage } from "../usePage";
 import { NotFound } from "./NotFound";
@@ -12,7 +12,7 @@ export function ServiceDetail() {
 
   usePage(
     service ? `${service.name} · IntelliForge` : "Not found · IntelliForge",
-    service ? `${service.headline} ${service.summary} ${hourly(service.rate)}.` : "Page not found.",
+    service ? `${service.headline} ${service.summary}` : "Page not found.",
   );
 
   if (!service) return <NotFound />;
@@ -36,9 +36,7 @@ export function ServiceDetail() {
                 { label: service.name },
               ]}
             />
-            <p className="eyebrow">
-              {service.number} · {hourly(service.rate)}
-            </p>
+            <p className="eyebrow">{service.number}</p>
             <h1>{service.headline}</h1>
             <p className="lede">{service.lede}</p>
           </div>
@@ -63,7 +61,6 @@ export function ServiceDetail() {
 
           <aside className="glance" aria-label="Engagement details">
             <p className="glance-kicker">{service.name}</p>
-            <p className="glance-rate">{hourly(service.rate)}</p>
             <dl>
               <div>
                 <dt>Led by</dt>
@@ -79,7 +76,7 @@ export function ServiceDetail() {
               </div>
               <div>
                 <dt>Engagement</dt>
-                <dd>Hourly. Scope agreed before work starts.</dd>
+                <dd>Scope agreed before work starts.</dd>
               </div>
               <div>
                 <dt>Standard</dt>

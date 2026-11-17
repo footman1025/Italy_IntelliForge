@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { hourly, type Service } from "../data/services";
+import { type Service } from "../data/services";
 
 export function SkillCard({ service }: { service: Service }) {
   return (
@@ -17,7 +17,6 @@ export function SkillCard({ service }: { service: Service }) {
         <h3>{service.name}</h3>
         <p>{service.summary}</p>
         <p className="skill-card-foot">
-          <span>{hourly(service.rate)}</span>
           <span aria-hidden="true">View →</span>
         </p>
       </div>

@@ -1,7 +1,7 @@
 import { useMemo, useState, type FormEvent } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { Breadcrumb } from "../components/Breadcrumb";
-import { hourly, services } from "../data/services";
+import { services } from "../data/services";
 import { studio } from "../studio";
 import { usePage } from "../usePage";
 
@@ -33,8 +33,7 @@ export function Contact() {
       `Name: ${name}`,
       `Email: ${email}`,
       company ? `Company: ${company}` : "",
-      `Practice: ${selected ? selected.name : "Not sure yet"}`,
-      selected ? `Published rate: ${hourly(selected.rate)}` : "",
+      `Service: ${selected ? selected.name : "Not sure yet"}`,
       "",
       message,
     ].filter((line) => line !== "");
@@ -91,7 +90,7 @@ export function Contact() {
                   <option value="">Not sure yet</option>
                   {services.map((service) => (
                     <option key={service.slug} value={service.slug}>
-                      {service.name} · {hourly(service.rate)}
+                      {service.name}
                     </option>
                   ))}
                 </select>
@@ -110,8 +109,7 @@ export function Contact() {
             </div>
             {selected && (
               <p className="form-note">
-                Published rate for {selected.name}: {hourly(selected.rate)}. The scope is
-                agreed before work starts.
+                You’re asking about {selected.name}. The scope is agreed before work starts.
               </p>
             )}
             <button className="button" type="submit">
@@ -135,12 +133,11 @@ export function Contact() {
               </ol>
             </div>
             <div>
-              <h2>Published hourly rates</h2>
-              <ul className="rate-list">
+              <h2>Services</h2>
+              <ul className="service-list">
                 {services.map((service) => (
                   <li key={service.slug}>
                     <Link to={`/services/${service.slug}`}>{service.name}</Link>
-                    <span>{hourly(service.rate)}</span>
                   </li>
                 ))}
               </ul>
