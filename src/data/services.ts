@@ -129,9 +129,8 @@ export const services: Service[] = [
     number: "03",
     name: "Brand & motion",
     rate: 30,
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "A designer’s desk with color swatches and layout sketches",
+    image: "/design.png",
+    imageAlt: "A designer at a desk with a brand identity on the monitor",
     summary: "Identity, product design, print, and video.",
     headline: "Tied together, on purpose.",
     lede: "Most brands don't get ignored because the design is ugly. They get ignored because nothing ties it together. A logo that says one thing, a website that says another, a video that sounds like a different company.",
