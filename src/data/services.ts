@@ -279,9 +279,8 @@ export const services: Service[] = [
     number: "05",
     name: "Stores & CMS",
     rate: 40,
-    image:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "A retail store interior with clothing on display",
+    image: "/cms.png",
+    imageAlt: "A shopper browsing a store catalog on a tablet",
     summary: "WordPress, Shopify, Webflow, and stores that sell.",
     headline: "Your store, built to sell.",
     lede: "Most stores don't underperform because of the platform. They underperform because someone stacked twenty plugins on a bloated theme and hoped for the best. Slow checkout, a broken mobile layout, no analytics. The traffic arrives. The sales don't.",
